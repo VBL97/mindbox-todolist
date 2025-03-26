@@ -1,0 +1,12 @@
+@use "../variables.scss" as *;
+
+.task-item {
+  padding: 0px 10px;
+
+  &_completed {
+    .task-item__name {
+      color: $secondary-text-color;
+      text-decoration: line-through;
+    }
+  }
+}

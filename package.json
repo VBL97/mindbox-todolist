@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack --env mode=development",
-    "build:prod": "webpack --env mode=production",
+    "build": "webpack --env mode=production",
     "start": "webpack serve --env mode=development"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ant-design/icons": "^6.0.0",
     "antd": "^5.24.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

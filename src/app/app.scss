@@ -1,0 +1,15 @@
+@use "../variables.scss" as *;
+
+.app {
+  height: 100vh;
+  background-color: $background-color;
+}
+
+.divider {
+  margin: 0;
+}
+
+.card {
+  width: 70%;
+  max-width: 600px;
+}

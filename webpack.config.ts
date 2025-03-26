@@ -40,7 +40,7 @@ export default (env: EnvVariables) => {
       rules: [
         {
           test: /\.s[ac]ss$/i,
-          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+          use: [isDev ? "style-loader" : MiniCssExtractPlugin.loader,, "css-loader", "sass-loader"],
         },
         {
           exclude: /node_modules/,
@@ -70,6 +70,7 @@ export default (env: EnvVariables) => {
       ? {
           port: env.port ?? 5000,
           open: true,
+          hot: true,
         }
       : undefined,
   };
